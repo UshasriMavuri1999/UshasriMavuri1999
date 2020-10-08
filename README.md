@@ -6,7 +6,7 @@
 I'm a CS Student at [@vvit](http://vvitguntur.com/) 
 
 
-- ⚡️ Technologies I work with: JavaScript, TypeScript, Angular, CSS, HTML, Bootstrap, Angular, Python and more ....
+- ⚡️ Technologies I work with: JavaScript, TypeScript, Angular, CSS, HTML, Bootstrap, Python and more ....
 - 👨‍💻 All of my projects are available  [here](https://github.com/ushasrimavuri1999?tab=repositories)
 - 👯 Looking for an Internship/Full Time opportunity.
 

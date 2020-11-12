@@ -26,17 +26,31 @@ I'm a CS Student at [@vvit](http://vvitguntur.com/)
 <p >
   <b><i>Let's connect! Find me on the web.</i></b>
 
-
+<!--
 [<img height="30" src = "https://img.shields.io/badge/gmail-c14438?&style=for-the-badge&logo=gmail&logoColor=white">][gmail] 
 [<img height="30" src="https://img.shields.io/badge/linkedin-blue.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />][LinkedIn]
 [<img height="30" src="https://img.shields.io/badge/-Medium-000000.svg?&style=for-the-badge&logo=Medium&logoColor=white" />][Medium]
+-->
+<a target="_blank" href="https://www.linkedin.com/in/ushasri-mavuri-a86353153/">
+  <img align="left" alt="LinkdeIN" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
+</a>
+<a target="_blank" href="https://dev.to/ushasrimavuri1999">
+  <img align="left" alt="Devto" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/dev-dot-to.svg" />
+</a>
+<a target="_blank" href="mailto:ushasrimavuri1999@gmail.com">
+  <img align="left" alt="Gmail" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />
+</a>
+<a target="_blank" href="https://medium.com/@ushasrimavuri1999">
+  <img align="left" alt="Medium" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.12.3/icons/medium.svg" />
+</a>
 <br />
 <hr />
 <h3 align="center">Show some &nbsp;❤️&nbsp; by starring some of the, <a href="https://github.com/ushasrimavuri1999?tab=repositories">repositories! </a></h3> 
-
+<!--
 [gmail]: https://gmail.com
 [linkedin]: https://www.linkedin.com/in/ushasri-mavuri-a86353153/
 [Medium]: https://medium.com/@ushasrimavuri1999
+-->
 
 
 

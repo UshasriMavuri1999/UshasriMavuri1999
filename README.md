@@ -23,8 +23,7 @@ I'm a CS Student at [@vvit](http://vvitguntur.com/)
 </details>
 
 
-<p >
-  <b><i>Let's connect! Find me on the web.</i></b>
+### Let's connect! Find me on the web. <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="24px">
 
 <!--
 [<img height="30" src = "https://img.shields.io/badge/gmail-c14438?&style=for-the-badge&logo=gmail&logoColor=white">][gmail] 

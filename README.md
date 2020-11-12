@@ -35,7 +35,7 @@ I'm a CS Student at [@vvit](http://vvitguntur.com/)
 </details>
 
 
-### Let's connect! Find me on the web. <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="24px">
+### Let's connect! Find me on the web. <img src="https://github.com/UshasriMavuri1999/UshasriMavuri1999/blob/main/images/Earth.gif" width="24px">
 
 <!--
 [<img height="30" src = "https://img.shields.io/badge/gmail-c14438?&style=for-the-badge&logo=gmail&logoColor=white">][gmail] 

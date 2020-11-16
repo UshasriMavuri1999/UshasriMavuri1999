@@ -115,16 +115,16 @@
                                         <div class="skill-item padd-15">
                                             <h5>Javascript</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 75%;">
-                                                    <div class="skill-percent">75%</div>
+                                                <div class="progress-in" style="width: 60%;">
+                                                    <div class="skill-percent">60%</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>Python</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 85%;">
-                                                    <div class="skill-percent">85%</div>
+                                                <div class="progress-in" style="width: 80%;">
+                                                    <div class="skill-percent">80%</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -347,7 +347,7 @@
                             <button type="" data-filter="non-technical">Non-Technical</button>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row certificate-items">
                         <!-- certificate-item  -->
                         <div class="certificate-item padd-15" data-category="internships">
                             <div class="certificate-item-inner shadow-dark">
@@ -361,6 +361,21 @@
                                     </div>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="certificate-item padd-15" data-category="internships">
+                            <div class="certificate-item-inner shadow-dark">
+                                <div class="certificate-img">
+                                    <img src="./images/portfolio/1.jpg" alt="">
+                                </div>
+                                <div class="certificate-info">
+                                    <h4>Internships</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <!-- certificate-item  -->
                         <div class="certificate-item padd-15" data-category="mentorships">
@@ -451,16 +466,24 @@
             <div class="lightbox-close">
                 &times;
             </div>
-            <img src="./images/portfolio/1.jpg" alt="" class="lightbox-img">
+            <img src="./images/portfolio/1.jpg" alt="" class="lightbox-img" onclick="nextItem()">
             <div class="lightbox-caption">
-                <div class="caption-text">Internships</div>
-                <div class="caption-counter">1/4</div>
+                <div class="caption-text"></div>
+                <div class="caption-counter"></div>
 
 
             </div>
         </div>
-        <div class="lightbox-controls"></div>
+        <div class="lightbox-controls">
+            <div class="prev-item" onclick="prevItem()">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="next-item" onclick="nextItem()">
+                <i class="fa fa-angle-right"></i>
+            </div>
+        </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

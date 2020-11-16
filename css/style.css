@@ -581,6 +581,26 @@ body {
     margin-bottom: 30px;
 }
 
+.certificate .certificate-item.hide {
+    display: none;
+}
+
+.certificate .certificate-item.show {
+    display: block;
+    animation: showItem 0.5s ease;
+}
+
+@keyframes showItem {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .certificate .certificate-item-inner {
     border: 6px solid #fdf9ff;
     border-radius: 10px;
@@ -724,30 +744,52 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     cursor: zoom-out;
     padding: 30px;
 }
 
+.lightbox.open {
+    display: flex;
+}
+
 .lightbox .lightbox-content img {
     height: auto;
     width: auto;
-    max-height: 430px;
+    max-height: 500px;
     max-width: 100%;
     cursor: pointer;
+    display: block;
+    padding: 40px 0 30px;
 }
 
 .lightbox .lightbox-content {
     position: relative;
+    /* transition: all 0.5s ease;
+    transform: scale(0.8); */
+}
+
+.lightbox.open .lightbox-content {
+    /* transform: scale(1); */
+    animation: lightboxImage .5s ease;
+}
+
+@keyframes lightboxImage {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .lightbox .lightbox-content .lightbox-close {
     position: absolute;
     height: 40px;
     width: 40px;
-    top: -40px;
+    top: 0;
     right: 0;
     font-size: 32px;
     text-align: right;
@@ -757,7 +799,7 @@ body {
 
 .lightbox .lightbox-content .lightbox-caption {
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     left: 0;
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.5); */
@@ -766,4 +808,44 @@ body {
     font-size: 16px;
     color: #ffffff;
     font-weight: 400;
+    z-index: -1;
+}
+
+.lightbox .lightbox-controls .prev-item,
+.lightbox .lightbox-controls .next-item {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 110;
+    transition: all 0.3s ease;
+}
+
+.lightbox .lightbox-controls .prev-item:hover,
+.lightbox .lightbox-controls .next-item:hover {
+    transform: scale(1.1);
+}
+
+.lightbox .lightbox-controls .prev-item:active,
+.lightbox .lightbox-controls .next-item:active {
+    transform: scale(1);
+}
+
+.lightbox .lightbox-controls .prev-item {
+    left: 30px;
+}
+
+.lightbox .lightbox-controls .next-item {
+    right: 30px;
+}
+
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa {
+    font-size: 32px;
+    line-height: 40px;
 }

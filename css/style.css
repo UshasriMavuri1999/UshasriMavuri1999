@@ -30,6 +30,12 @@ body {
     box-sizing: border-box;
 }
 
+input,
+textarea,
+select {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .section {
     background-color: #f2f2fc;
     min-height: 100vh;
@@ -119,6 +125,8 @@ body {
     transition: all 0.3s ease;
     display: inline-block;
     white-space: nowrap;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -403,39 +411,11 @@ body {
     margin-bottom: 30px;
 }
 
-.about .about-content .skills .skill-item h5 {
-    line-height: 40px;
-    font-weight: 600;
+.about .about-content .skills .skill-item p {
+    display: inline-block;
+    margin: 10px;
+    font-weight: 700;
     font-size: 16px;
-    color: #302e4d;
-    text-transform: capitalize;
-}
-
-.about .about-content .skills .skill-item .progress {
-    background-color: #e3e3e3;
-    height: 8px;
-    border-radius: 4px;
-    /* overflow: hidden; */
-    width: 100%;
-    position: relative;
-}
-
-.about .about-content .skills .skill-item .progress .progress-in {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-}
-
-.about .about-content .skills .skill-item .skill-percent {
-    /* display: none; */
-    line-height: 40px;
-    position: absolute;
-    right: 0;
-    top: -40px;
-    font-weight: 400;
-    color: #302e4d;
 }
 
 .about .about-content .education {
@@ -538,12 +518,70 @@ body {
     max-width: 33.33%;
 }
 
-.project .project-item .project-item-inner {
-    background-color: #fdf9ff;
-    border: 1px solid #d4d4e3;
+.project .project-item-inner {
     border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #d4d4e3;
+}
+
+.project .project-item-inner .project-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.project .project-item-inner .project-img img {
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.project .project-item-inner:hover .project-img img {
+    transform: scale(1.1);
+}
+
+.project .project-item-inner .project-img .project-date {
+    position: absolute;
+    padding: 4px 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    left: 15px;
+    bottom: 15px;
+}
+
+.project .project-item-inner .project-info {
     padding: 30px 15px;
-    text-align: center;
+    background-color: #fdf9ff;
+}
+
+.project .project-item-inner .project-info .project-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #302e4d;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.project .project-item-inner .project-info .project-description {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #504e70;
+    margin-bottom: 15px;
+}
+
+.project .project-item-inner .project-info .project-tags {
+    font-size: 14px;
+    line-height: 25px;
+    color: #504e70;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.project .project-item-inner .project-info .project-tags a {
+    text-decoration: none;
+    font-weight: 600;
 }
 
 
@@ -848,4 +886,187 @@ body {
 .lightbox .lightbox-controls .next-item .fa {
     font-size: 32px;
     line-height: 40px;
+}
+
+
+/* contact  */
+
+.contact .contact-info-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact .contact-info-item .icon {
+    display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa {
+    font-size: 40px;
+}
+
+.contact .contact-info-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #302e4d;
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    margin: 0;
+    font-weight: 400;
+    overflow-wrap: break-word;
+}
+
+.contact .contact-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact .contact-form .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .form-item {
+    margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item .form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #d4d4e3;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #504e70;
+    transition: all 0.3s ease;
+}
+
+.contact .contact-form .form-item .form-control:focus {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.contact .contact-form .form-item textarea.form-control {
+    height: 140px;
+}
+
+.contact .contact-form .btn {
+    height: 50px;
+    padding: 0 50px;
+}
+
+
+/* dark  */
+
+body.dark .section {
+    background-color: #151515;
+}
+
+body.dark .contact .contact-form .form-item .form-control,
+body.dark .project .project-item-inner .project-info,
+body.dark .blog .blog-item .blog-item-inner,
+body.dark .about .about-content .timeline,
+body.dark .aside {
+    background-color: #222222;
+}
+
+body.dark .contact .contact-info-item h4,
+body.dark .project .project-item-inner .project-info .project-title,
+body.dark .certificate .certificate-filter button,
+body.dark .blog .blog-item .blog-item-inner h4,
+body.dark .about .about-content .timeline .timeline-title,
+body.dark .about .about-content h3.title,
+body.dark .about .about-content .personal-info .info-item p,
+body.dark .about .about-content .about-text h3,
+body.dark .section-title h2,
+body.dark .home .intro h1,
+body.dark .aside .logo a,
+body.dark .aside .nav li a {
+    color: #ffffff;
+}
+
+body.dark .contact .contact-form .form-item .form-control,
+body.dark .contact .contact-info-item p,
+body.dark .project .project-item-inner .project-info .project-tags,
+body.dark .project .project-item-inner .project-info .project-description,
+body.dark .blog .blog-item .blog-item-inner p,
+body.dark .about .about-content .timeline .timeline-text,
+body.dark .about .about-content .timeline .timeline-date,
+body.dark .about .about-content .personal-info .info-item p span,
+body.dark .about .about-content .about-text p,
+body.dark .home .intro p {
+    color: #e9e9e9;
+}
+
+body.dark .aside,
+body.dark .contact .contact-form .form-item .form-control,
+body.dark .project .project-item-inner,
+body.dark .certificate .certificate-item-inner,
+body.dark .blog .blog-item .blog-item-inner,
+body.dark .about .about-content .timeline,
+body.dark .about .about-content .personal-info .info-item p,
+body.dark .aside .nav li a {
+    border-color: #393939;
+}
+
+body.dark .shadow-dark {
+    box-shadow: none;
+}
+
+
+/* responsive  */
+
+@media (max-width:1199px) {
+    /* .aside {
+        left: -270px;
+    }
+    .main-content {
+        padding-left: 0;
+    } */
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media (max-width:991px) {
+    .blog .blog-item,
+    .project .project-item {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width:767px) {
+    .blog .blog-item,
+    .project .project-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .certificate .certificate-filter button {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:575px) {
+    .contact .contact-info-item,
+    .certificate .certificate-item {
+        flex: 100%;
+        max-width: 100%;
+    }
 }

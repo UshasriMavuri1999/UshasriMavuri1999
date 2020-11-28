@@ -1,11 +1,11 @@
 .aside .logo a::before {
-    border-top: 4px solid #ec1839;
-    border-left: 4px solid #ec1839;
+    border-top: 4px solid #fa5b0f;
+    border-left: 4px solid #fa5b0f;
 }
 
 .aside .logo a::after {
-    border-bottom: 4px solid #ec1839;
-    border-right: 4px solid #ec1839;
+    border-bottom: 4px solid #fa5b0f;
+    border-right: 4px solid #fa5b0f;
 }
 
 .about .about-content .skills .skill-item p,
@@ -14,14 +14,14 @@
 .lightbox .lightbox-controls .prev-item .fa,
 .lightbox .lightbox-controls .next-item .fa,
 .certificate .certificate-item .certificate-info .icon .fa,
-.certificate .certificate-filter button.active,
 body.dark .certificate .certificate-filter button.active,
+.certificate .certificate-filter button.active,
 .aside .nav li a:hover,
-.about .about-content .about-text h3 span,
 body.dark .aside .nav li a:hover,
 body.dark .aside .nav li a.active,
+.about .about-content .about-text h3 span,
 .aside .nav li a.active {
-    color: #ec1839;
+    color: #fa5b0f;
 }
 
 .project .project-item-inner .project-img .project-date,
@@ -34,10 +34,10 @@ body.dark .aside .nav li a.active,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after,
 .home .intro .social-link a {
-    background-color: #ec1839;
+    background-color: #fa5b0f;
 }
 
 body.dark .certificate .certificate-filter button.active,
 .certificate .certificate-filter button.active {
-    border-color: #ec1839;
+    border-color: #fa5b0f;
 }
